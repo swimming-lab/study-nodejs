@@ -7,6 +7,7 @@
 node hello.js
 node webserver.js
 node underscore.js
+node file/sync_async.js
 ```
 
 ### 의존성
@@ -18,10 +19,11 @@ npm install uglify-js -g
 ### uglifyjs 실행
 ```
 uglifyjs [input files] [options]
-uglifyjs ./uglify/test.js
+uglifyjs uglify/test.js -m -o uglify/test.min.js
 ```
 
 참고]
+- https://nodejs.org/
 - https://www.npmjs.com
 - https://www.w3schools.com/js
 - https://www.toptal.com/developers/gitignore
