@@ -8,12 +8,14 @@ node hello.js
 node webserver.js
 node underscore.js
 node file/sync_async.js
+node app.js
 ```
 
 ### 의존성
 ```
 npm install underscore --save
 npm install uglify-js -g
+npm install express --save
 ```
 
 ### uglifyjs 실행
