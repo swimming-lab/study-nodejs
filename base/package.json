@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/swimming-lab/study-nodejs#readme",
   "dependencies": {
+    "mysql2": "^2.3.3",
     "underscore": "^1.13.6"
   }
 }
