@@ -68,6 +68,7 @@ async function test() {
 ```
 
 일반 함수에는 `await`을 사용할 수 없으며 최상위 레벨 코드(top-level-code)에도 사용할 수 없다.
+> ES2022(ES13)에서 변경되어 이제 `async`함수 및 클래스 외부에서도 `await`연산자 사용이 가능하다.
 ```js
 // 프라미스가 있더라도 일반 함수에서 사용하면 에러 발생!
 function normal() {
