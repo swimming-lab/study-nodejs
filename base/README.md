@@ -16,6 +16,7 @@ node db/mysql.js
 npm install underscore --save
 npm install uglify-js -g
 npm install mysql2 --save
+npm install sequelize sequelize-cli --save
 ```
 
 ### uglifyjs 실행

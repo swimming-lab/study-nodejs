@@ -18,6 +18,9 @@
   "homepage": "https://github.com/swimming-lab/study-nodejs#readme",
   "dependencies": {
     "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3",
+    "sequelize-cli": "^6.5.1",
+    "sqlite3": "^5.1.2",
     "underscore": "^1.13.6"
   }
 }
