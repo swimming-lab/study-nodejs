@@ -9,6 +9,7 @@ node webserver.js
 node underscore.js
 node file/sync_async.js
 node db/mysql.js
+node db/sequelize.js
 ```
 
 ### 의존성
@@ -16,7 +17,7 @@ node db/mysql.js
 npm install underscore --save
 npm install uglify-js -g
 npm install mysql2 --save
-npm install sequelize sequelize-cli --save
+npm install sequelize sequelize-cli sqlite3 --save
 ```
 
 ### uglifyjs 실행
@@ -25,8 +26,14 @@ uglifyjs [input files] [options]
 uglifyjs uglify/test.js -m -o uglify/test.min.js
 ```
 
+### Sequelize
+사용방법 및 옵션 정리
+(./db/sequelize/files)
+
+
 참고]
 - https://nodejs.org/
 - https://www.npmjs.com
 - https://www.w3schools.com/js
 - https://www.toptal.com/developers/gitignore
+- https://sequelize.org/docs/v6/getting-started/
