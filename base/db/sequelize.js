@@ -132,4 +132,26 @@ const User = sequelize.define("user", {
 
 	// paging
 	User.findAll({ offset: 5, limit: 5 });
+
+	// Associations
+	const Post = sequelize.define("Posts", {
+		title: DataTypes.STRING,
+		body: DataTypes.STRING
+	});
+	const Comment = sequelize.define("Comments", {
+		content: DataTypes.STRING,
+	});
+	Post.hasMany(Comment);
+	Comment.belongsTo(Post);
+	await sequelize.sync();
+
+	const post = await Post.create({ title: "News", body: "blaalalalalal" });
+	for (let i=0; i<10; i++) {
+    await Comment.create({ PostId: post.id, title: "News", content: "contents " + i });
+	}
+	const post1 = await Post.findAll({ include: Comment });
+	console.log(JSON.stringify(post1, null, 2));
+
+	const columns1 = await Comment.findAll({ include: Post });
+	console.log(JSON.stringify(columns1, null, 2));
 })();
